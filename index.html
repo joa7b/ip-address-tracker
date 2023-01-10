@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+
+      <section class="inputSection">
+        <input type="text" id="inputIP" placeholder="Digite o IP" />
+        <button id="buttonSearch">></button>
+      </section>
+    </header>
+
+    <section id="container">
+      <section class="searchResults">
+        <div>
+          <span>IP ADDRESS</span>
+          <h2 id="spanIpAddress">0.0.0.0</h2>
+        </div>
+
+        <div>
+          <span>LOCATION</span>
+          <h2 id="spanLocation">Brooklyn, NY 10001</h2>
+        </div>
+
+        <div>
+          <span>TIMEZONE</span>
+          <h2 id="spanTimezone">UTC -05:00</h2>
+        </div>
+
+        <div>
+          <span>ISP</span>
+          <h2 id="spanISP">SpaceX</h2>
+        </div>
+      </section>
+      <section id="containerMap">
+        <iframe
+          src="https://maps.google.com/maps?q=37.38605,-122.08385&hl=pt-BR&z=16&amp;output=embed"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          id="map"
+        ></iframe>
+      </section>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">João Peretti</a>.
+    </div>
+    <script src=""></script>
+  </body>
+</html>
